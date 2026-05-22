@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Base custom definitions and custom gradients */
+body {
+  font-family: var(--font-sans);
+  background-color: #FAFAFA;
+  color: #222222;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-sans); /* Match simple modern Airbnb typography */
+  color: #222222;
+}
+
+/* Smooth transit hover for buttons */
+.airbnb-btn {
+  background-color: #FF385C;
+  color: #FFFFFF;
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.airbnb-btn:hover {
+  background-color: #E61E4D;
+  transform: scale(1.01);
+}
+
+/* Simple soft elevation shadows used by Airbnb */
+.airbnb-card {
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.airbnb-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F7F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDDDDD;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C1C1C1;
+}

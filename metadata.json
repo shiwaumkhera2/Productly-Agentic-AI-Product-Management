@@ -1,0 +1,6 @@
+{
+  "name": "Productly",
+  "description": "Autonomous AI Product Manager for startups. Integrates support tickets, analysis, PRD writing, roadmap prioritization, and engineering tickets in an agentic OS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
